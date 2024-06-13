@@ -1,12 +1,37 @@
-import Image from 'next/image';
+'use client'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Navigation, Pagination } from 'swiper/modules';
 import styles from '../styles/Header.module.css';
 
 const Header = () => (
   <header className={styles.header}>
-    <Image src="/logo.png" alt="Vasto Mondo" width={50} height={50} />
-    <h1>Roteiros Personalizados</h1>
-    <p>Vamos planejar juntos!</p>
-    <button>Entre em Contato</button>
+    <Swiper
+      spaceBetween={30}
+      centeredSlides={true}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
+      pagination={{
+        clickable: true,
+      }}
+      navigation={true}
+      modules={[Navigation, Pagination]}
+      className="mySwiper"
+    >
+      <SwiperSlide>
+        <img src="/1.jpg" alt="Image 1" className={styles.slideImage} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src="/2.jpg" alt="Image 2" className={styles.slideImage} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src="/3.jpg" alt="Image 3" className={styles.slideImage} />
+      </SwiperSlide>
+    </Swiper>
   </header>
 );
 
