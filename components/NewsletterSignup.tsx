@@ -7,7 +7,6 @@ const NewsletterSignup = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Aqui você pode adicionar a lógica para processar o cadastro do email
     console.log('Email cadastrado:', email);
   };
 

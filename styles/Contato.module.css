@@ -2,13 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px; /* Espaçamento interno */
+    padding: 40px 20px;
     background-color: #f4f4f4;
   }
   
   .contactContent {
     text-align: center;
-    max-width: 600px; /* Limite a largura máxima para melhor legibilidade */
+    max-width: 600px;
     padding: 20px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
