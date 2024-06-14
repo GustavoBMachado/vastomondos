@@ -23,7 +23,7 @@ const Header = () => (
       className="mySwiper"
     >
       <SwiperSlide>
-        <img src="/1.jpg" alt="Image 1" className={styles.slideImage} />
+        <img src="/1.png" alt="Image 1" className={styles.slideImage} />
       </SwiperSlide>
       <SwiperSlide>
         <img src="/2.jpg" alt="Image 2" className={styles.slideImage} />
