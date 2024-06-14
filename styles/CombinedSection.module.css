@@ -1,8 +1,17 @@
 .section {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
+  margin-top: 40px; /* Espaçamento superior para separar da seção anterior */
+  background-color: #f4f4f4; /* Exemplo de cor de fundo */
+}
+
+.imageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espaçamento entre os itens */
 }
 
 .content {
@@ -24,29 +33,44 @@
 
 .text {
   max-width: 200px;
-  max-height: 160px; /* Limita a altura inicial para aproximadamente 8 linhas */
-  overflow: hidden;
 }
 
-.expanded {
-  max-height: none; /* Remove a limitação de altura ao expandir */
-  overflow: visible;
-}
-
-.moreButton {
-  margin-top: 10px;
-  padding: 5px 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.moreButton:hover {
-  background-color: #0056b3;
-}
-
-/* Qualificar h2 com a classe .content */
 .content h2 {
   margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 1em;
+  color: #333;
+  margin: 5px 0;
+}
+
+.contactContent {
+  text-align: center;
+  max-width: 600px; /* Limite a largura máxima para melhor legibilidade */
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 40px; /* Espaçamento superior para separar da seção anterior */
+}
+
+.contactContent h2 {
+  margin-bottom: 10px;
+}
+
+.contactContent p {
+  font-size: 1em;
+  color: #333;
+  margin: 5px 0;
+}
+
+.contactContent strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contactContent em {
+  display: block;
+  margin-bottom: 5px;
 }
