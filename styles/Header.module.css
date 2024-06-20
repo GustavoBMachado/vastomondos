@@ -1,61 +1,133 @@
+.customizableHeader {
+  --top-bar-bg-color: rgba(0, 0, 0, 0.247); /* Cor e opacidade da barra */
+  --top-bar-height: 60px; /* Altura da barra */
+  --center-bar-bg-color: rgba(0, 0, 0, 0.5); /* Cor e opacidade da barra */
+  --center-bar-height: 100px; /* Altura da barra */
+  --center-title-color: #fff; /* Cor do título */
+  --center-text-color: #fff; /* Cor do texto */
+  --logo-top: 0; /* Posição vertical do logotipo */
+  --logo-left: 49%; /* Posição horizontal do logotipo */
+  --logo-transform: translateX(-50%); /* Centralizar horizontalmente */
+  --logo-width: 150px; /* Largura do logotipo */
+  --logo-height: 150px; /* Altura do logotipo */
+}
+
 .header {
-    position: relative;
-    text-align: center;
-    color: white;
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-  
-  .mySwiper {
-    width: 100%;
-    height: 400px;
-  }
-  
-  .mySwiper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .slideImage {
-    width: fill;
-    max-width: fill;
-    height: auto;
-    margin: 0 auto;
-    object-fit: cover;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .overlay h1 {
-    font-size: 3em;
-    margin: 0;
-  }
-  
-  .overlay p {
-    font-size: 1.5em;
-    margin: 10px 0;
-  }
-  
-  .overlay button {
-    background-color: #008CBA;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-  }
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Altura total da tela */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; /* Cor de fundo para o cabeçalho */
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiperContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.swiperButtonNext, .swiperButtonPrev {
+  color: #fff; /* Cor dos botões de navegação */
+  width: 50px;
+  height: 50px;
+  font-weight: bold;
+}
+
+.swiperButtonNext::after, .swiperButtonPrev::after {
+  font-size: 20px; /* Tamanho do ícone dos botões de navegação */
+}
+
+.swiperBullet {
+  background-color: rgba(255, 255, 255, 0.5); /* Cor dos botões de paginação */
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+}
+
+.swiperBulletActive {
+  background-color: #fff; /* Cor do botão de paginação ativo */
+}
+
+.topBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--top-bar-height); /* Altura da barra */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribui os itens nas extremidades */
+  padding: 0 20px; /* Espaçamento interno nas laterais */
+  background-color: var(--top-bar-bg-color); /* Cor e opacidade da barra */
+  z-index: 2;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.navLink {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.navLink:hover {
+  background-color: rgba(73, 73, 73, 0);
+  border-radius: 5px;
+}
+
+.logoContainer {
+  position: absolute;
+  top: var(--logo-top);
+  left: var(--logo-left);
+  transform: var(--logo-transform);
+  width: var(--logo-width);
+  height: var(--logo-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+}
+
+.centerBar {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 100%; /* Largura total */
+  transform: translate(-50%, 50%); /* Centraliza horizontalmente e verticalmente */
+  background-color: var(--center-bar-bg-color); /* Cor e opacidade da barra */
+  padding: 10px 20px;
+  border-radius: 0px;
+  text-align: center;
+  z-index: 2;
+}
+
+.centerTitle {
+  color: var(--center-title-color); /* Cor do título */
+  font-size: 60px;
+  margin-bottom: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.centerText {
+  color: var(--center-text-color); /* Cor do texto */
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}

@@ -1,41 +1,57 @@
+.customizableTitle {
+  --newsletter-title-font-size: 2rem; /* Tamanho padrão do título */
+  --newsletter-title-color: #000; /* Cor padrão do título */
+}
+
 .signupSection {
-    text-align: center;
-    padding: 20px;
-    background-color: #f4f4f4;
-    margin-top: 20px;
-  }
-  
-  .signupSection h2 {
-    margin-bottom: 10px;
-  }
-  
-  .signupSection p {
-    margin-bottom: 20px;
-  }
-  
-  .form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 10px;
-    flex-grow: 1;
-  }
-  
-  .button {
-    padding: 10px 20px;
-    background-color: #0066ff;
-    color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .button:hover {
-    background-color: #afafaf71;
-  }
+  padding: 20px;
+  background-color: #f4f4f4; /* Cor de fundo para a seção de inscrição */
+  text-align: center;
+}
+
+.newsletterTitle {
+  font-size: 50px; /* Usar variável CSS para o tamanho do título */
+  color: #555555; /* Usar variável CSS para a cor do título */
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.separator {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+.signupSection p {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0 20px 0;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.button {
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #5a5a5a;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #5555559c;
+}

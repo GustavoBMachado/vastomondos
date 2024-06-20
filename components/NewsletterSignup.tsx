@@ -11,8 +11,9 @@ const NewsletterSignup = () => {
   };
 
   return (
-    <section className={styles.signupSection}>
-      <h2>Cadastro</h2>
+    <section className={`${styles.signupSection} ${styles.customizableTitle}`}>
+      <h2 className={styles.newsletterTitle}>Cadastro</h2>
+      <hr className={styles.separator} />
       <p>Ganhe 10% de desconto em sua primeira compra ao se inscrever no nosso boletim informativo!</p>
       <form onSubmit={handleSubmit} className={styles.form}>
         <input

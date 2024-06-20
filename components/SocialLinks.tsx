@@ -3,8 +3,9 @@ import styles from '../styles/SocialLinks.module.css';
 
 const SocialLinks = () => {
   return (
-    <section className={styles.socialSection}>
-      <h2>Siga nossas redes sociais</h2>
+    <section className={`${styles.socialSection} ${styles.customizableTitle}`}>
+      <h2 className={styles.socialTitle}>Siga nossas redes sociais</h2>
+      <hr className={styles.separator} />
       <div className={styles.icons}>
         <a href="https://facebook.com/VastoMondo" target="_blank" rel="noopener noreferrer" className={styles.icon}>
           <img src="/facebook.png" alt="Facebook" />

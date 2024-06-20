@@ -1,18 +1,32 @@
-.socialSection {
-  text-align: center;
-  padding: 20px;
-  background-color: #f4f4f4;
-  margin-top: 40px;
+.customizableTitle {
+  --social-title-font-size: 2rem; /* Tamanho padrão do título */
+  --social-title-color: #000; /* Cor padrão do título */
 }
 
-.socialSection h2 {
-  margin-bottom: 20px;
+.socialSection {
+  padding: 20px;
+  background-color: #f4f4f4; /* Cor de fundo para a seção de links sociais */
+  text-align: center;
+}
+
+.socialTitle {
+  font-weight: bold;
+  font-size: 50px; /* Usar variável CSS para o tamanho do título */
+  color: var(--social-title-color); /* Usar variável CSS para a cor do título */
+  margin-bottom: 10px;
+  color: #555555;
+}
+
+.separator {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #ddd;
 }
 
 .icons {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 30px;
 }
 
 .icon img {

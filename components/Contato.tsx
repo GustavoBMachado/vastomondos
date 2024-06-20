@@ -3,9 +3,9 @@ import styles from '../styles/Contato.module.css';
 
 const Contato = () => {
   return (
-    <section className={styles.contactSection}>
+    <section className={`${styles.contactSection} ${styles.customizableTitle}`}>
       <div className={styles.contactContent}>
-        <h2>Contato</h2>
+        <h2 className={styles.contactTitle}>Contato</h2>
         <hr className={styles.separator} />
         <p>Junte-se a nós neste <strong>Vasto Mondo!</strong></p>
         <a href="https://wa.me/5551981128755" target="_blank" rel="noopener noreferrer" className={styles.button}>
