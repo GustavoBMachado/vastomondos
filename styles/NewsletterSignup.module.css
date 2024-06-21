@@ -1,17 +1,17 @@
 .customizableTitle {
-  --newsletter-title-font-size: 2rem; /* Tamanho padrão do título */
-  --newsletter-title-color: #000; /* Cor padrão do título */
+  --newsletter-title-font-size: 2rem;
+  --newsletter-title-color: #000;
 }
 
 .signupSection {
   padding: 20px;
-  background-color: #f4f4f4; /* Cor de fundo para a seção de inscrição */
+  background-color: #f4f4f4;
   text-align: center;
 }
 
 .newsletterTitle {
-  font-size: 50px; /* Usar variável CSS para o tamanho do título */
-  color: #555555; /* Usar variável CSS para a cor do título */
+  font-size: 50px;
+  color: #555555;
   margin-bottom: 10px;
   font-weight: bold;
 }

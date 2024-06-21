@@ -1,25 +1,25 @@
 .customizableHeader {
-  --top-bar-bg-color: rgba(0, 0, 0, 0.247); /* Cor e opacidade da barra */
-  --top-bar-height: 60px; /* Altura da barra */
-  --center-bar-bg-color: rgba(0, 0, 0, 0.5); /* Cor e opacidade da barra */
-  --center-bar-height: 100px; /* Altura da barra */
-  --center-title-color: #fff; /* Cor do título */
-  --center-text-color: #fff; /* Cor do texto */
-  --logo-top: 0; /* Posição vertical do logotipo */
-  --logo-left: 49%; /* Posição horizontal do logotipo */
-  --logo-transform: translateX(-50%); /* Centralizar horizontalmente */
-  --logo-width: 150px; /* Largura do logotipo */
-  --logo-height: 150px; /* Altura do logotipo */
+  --top-bar-bg-color: rgba(0, 0, 0, 0.247);
+  --top-bar-height: 60px;
+  --center-bar-bg-color: rgba(0, 0, 0, 0.5);
+  --center-bar-height: 100px;
+  --center-title-color: #fff;
+  --center-text-color: #fff;
+  --logo-top: 0;
+  --logo-left: 49%;
+  --logo-transform: translateX(-50%);
+  --logo-width: 150px;
+  --logo-height: 150px;
 }
 
 .header {
   position: relative;
   width: 100%;
-  height: 100vh; /* Altura total da tela */
+  height: 80vh; 
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000; /* Cor de fundo para o cabeçalho */
+  background-color: #000;
 }
 
 .image {
@@ -34,25 +34,25 @@
 }
 
 .swiperButtonNext, .swiperButtonPrev {
-  color: #fff; /* Cor dos botões de navegação */
+  color: #fff;
   width: 50px;
   height: 50px;
   font-weight: bold;
 }
 
 .swiperButtonNext::after, .swiperButtonPrev::after {
-  font-size: 20px; /* Tamanho do ícone dos botões de navegação */
+  font-size: 20px;
 }
 
 .swiperBullet {
-  background-color: rgba(255, 255, 255, 0.5); /* Cor dos botões de paginação */
+  background-color: rgba(255, 255, 255, 0.5);
   width: 12px;
   height: 12px;
   opacity: 1;
 }
 
 .swiperBulletActive {
-  background-color: #fff; /* Cor do botão de paginação ativo */
+  background-color: #fff;
 }
 
 .topBar {
@@ -60,12 +60,12 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: var(--top-bar-height); /* Altura da barra */
+  height: var(--top-bar-height);
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Distribui os itens nas extremidades */
-  padding: 0 20px; /* Espaçamento interno nas laterais */
-  background-color: var(--top-bar-bg-color); /* Cor e opacidade da barra */
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: var(--top-bar-bg-color);
   z-index: 2;
 }
 
@@ -108,9 +108,9 @@
   position: absolute;
   bottom: 50%;
   left: 50%;
-  width: 100%; /* Largura total */
-  transform: translate(-50%, 50%); /* Centraliza horizontalmente e verticalmente */
-  background-color: var(--center-bar-bg-color); /* Cor e opacidade da barra */
+  width: 100%;
+  transform: translate(-50%, 50%);
+  background-color: var(--center-bar-bg-color);
   padding: 10px 20px;
   border-radius: 0px;
   text-align: center;
@@ -118,7 +118,7 @@
 }
 
 .centerTitle {
-  color: var(--center-title-color); /* Cor do título */
+  color: var(--center-title-color);
   font-size: 60px;
   margin-bottom: 5px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -126,7 +126,7 @@
 }
 
 .centerText {
-  color: var(--center-text-color); /* Cor do texto */
+  color: var(--center-text-color);
   font-size: 30px;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;

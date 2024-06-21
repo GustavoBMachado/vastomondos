@@ -17,7 +17,7 @@
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   width: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
 }
 
 .imageContainer {
@@ -61,6 +61,7 @@
   font-size: 1.5rem;
   opacity: 1;
   transition: opacity 0.3s ease;
+  text-align: center;
 }
 
 .imageContainer:hover .imageOverlay {
@@ -71,11 +72,14 @@
   opacity: 1;
   transition: opacity 0.3s ease;
   font-weight: bold;
+  justify-content: center;
 }
 
 .hoverText {
   opacity: 0;
   transition: opacity 0.3s ease;
+  text-align: center;
+  font-weight: bolder;
 }
 
 .imageContainer:hover .title {
@@ -87,9 +91,8 @@
 }
 
 .customizable-text {
-  --title-color: #000000; /* Cor padrão dos títulos */
-  --text-color: #000000; /* Cor padrão dos textos */
-  font-weight: bold;
+  --title-color: #000000;
+  --text-color: #000000;
 }
 
 .separator {

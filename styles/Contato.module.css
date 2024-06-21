@@ -1,10 +1,10 @@
 .customizableTitle {
-  --contact-title-font-size: 2rem; /* Tamanho padrão do título */
+  --contact-title-font-size: 2rem;
 }
 
 .contactSection {
   padding: 20px;
-  background-color: #f4f4f4; /* Cor de fundo para a seção de contato */
+  background-color: #f4f4f4;
   text-align: center;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .contactTitle {
-  font-size: 50px; /* Usar variável CSS para o tamanho do título */
+  font-size: 50px;
   color: #555555;
   margin-bottom: 10px;
   font-weight: bold;

@@ -19,7 +19,7 @@ const CombinedSection = () => {
     'Pacotes'
   ];
 
-  const charLimit = 181; // Ajuste o número de caracteres aqui
+  const charLimit = 181;
 
   const [expanded, setExpanded] = useState<boolean[]>(Array(texts.length).fill(false));
 
